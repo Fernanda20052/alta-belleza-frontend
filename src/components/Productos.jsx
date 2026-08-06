@@ -67,7 +67,8 @@ function Productos() {
 
                     productos.map((producto) => (
 
-                        <div
+           
+                      <div
                             className="card-producto"
                             key={producto.id}
                         >
@@ -75,12 +76,12 @@ function Productos() {
                             <div className="imagen-producto">
 
                                 <img
-                                   
-    src={`https://alta-belleza-backend-production.up.railway.app/uploads/${producto.imagen}`}
-                                    onError={(e) => {
-                                        e.target.src = "https://via.placeholder.com/300x300?text=Sin+Imagen";
-                                    }}
-                                />
+    src={producto.imagen}
+    alt={producto.nombre}
+    onError={(e) => {
+        e.target.src = "https://via.placeholder.com/300x300?text=Sin+Imagen";
+    }}
+/>
 
                             </div>
 

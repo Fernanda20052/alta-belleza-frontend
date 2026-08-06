@@ -433,7 +433,7 @@ const guardarProducto = async (e) => {
                                         <td>
 
                                             <img
-                                                src={`https://alta-belleza-backend-production.up.railway.app/uploads/${item.imagen}`}
+                                                src={item.imagen}
                                                 alt={item.nombre}
                                                 className="admin-imagen"
                                             />
