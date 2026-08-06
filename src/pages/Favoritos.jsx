@@ -30,7 +30,7 @@ function Favoritos() {
         try {
 
             const respuesta = await fetch(
-                `http://localhost:8082/api/favoritos/${usuario}`
+                `https://alta-belleza-backend-production.up.railway.app/api/favoritos/${usuario}`
             );
 
             if (!respuesta.ok) {
@@ -57,7 +57,7 @@ function Favoritos() {
 
             const respuesta = await fetch(
 
-                `http://localhost:8082/api/favoritos/${usuario}/${productoId}`,
+                `https://alta-belleza-backend-production.up.railway.app/api/favoritos/${usuario}/${productoId}`,
 
                 {
                     method: "DELETE"
@@ -138,7 +138,7 @@ function Favoritos() {
                                 <div className="favorito-imagen">
 
                                   <img
-    src={`http://localhost:8082/uploads/${favorito.producto.imagen}`}
+    src={`https://alta-belleza-backend-production.up.railway.app/uploads/${favorito.producto.imagen}`}
     alt={favorito.producto.nombre}
     onError={(e) => {
         console.log("No se encontró:", favorito.producto.imagen);

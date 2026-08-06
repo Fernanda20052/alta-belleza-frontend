@@ -60,7 +60,7 @@ function CarritoLista() {
                                     >
 
                                         <img
-                                            src={`http://localhost:8082/uploads/${producto.imagen}`}
+                                            src={`https://alta-belleza-backend-production.up.railway.app/uploads/${producto.imagen}`}
                                             alt={producto.nombre}
                                             onError={(e) => {
                                                 e.target.src =

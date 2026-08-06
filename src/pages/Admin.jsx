@@ -52,7 +52,7 @@ const salir = () => {
         try {
 
             const respuesta = await fetch(
-                "http://localhost:8082/api/productos"
+                "https://alta-belleza-backend-production.up.railway.app/api/productos"
             );
 
             const datos = await respuesta.json();
@@ -124,7 +124,7 @@ const guardarProducto = async (e) => {
 
             const respuesta = await fetch(
 
-                `http://localhost:8082/api/productos/${producto.id}`,
+                `https://alta-belleza-backend-production.up.railway.app/api/productos/${producto.id}`,
 
                 {
 
@@ -177,7 +177,7 @@ const guardarProducto = async (e) => {
 
             const respuesta = await fetch(
 
-                "http://localhost:8082/api/productos",
+                "https://alta-belleza-backend-production.up.railway.app/api/productos",
 
                 {
 
@@ -224,7 +224,7 @@ const guardarProducto = async (e) => {
 
         await fetch(
 
-            `http://localhost:8082/api/productos/${id}`,
+            `https://alta-belleza-backend-production.up.railway.app/api/productos/${id}`,
 
             {
 
@@ -433,7 +433,7 @@ const guardarProducto = async (e) => {
                                         <td>
 
                                             <img
-                                                src={`http://localhost:8082/uploads/${item.imagen}`}
+                                                src={`https://alta-belleza-backend-production.up.railway.app/uploads/${item.imagen}`}
                                                 alt={item.nombre}
                                                 className="admin-imagen"
                                             />

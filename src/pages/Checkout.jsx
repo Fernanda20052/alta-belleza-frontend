@@ -74,7 +74,7 @@ function Checkout() {
 
         const respuesta = await fetch(
 
-            "http://localhost:8082/api/pedidos",
+            "https://alta-belleza-backend-production.up.railway.app/api/pedidos",
 
             {
 

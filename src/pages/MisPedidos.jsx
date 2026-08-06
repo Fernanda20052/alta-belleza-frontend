@@ -26,7 +26,7 @@ function MisPedidos() {
         try {
 
             const respuesta = await fetch(
-                `http://localhost:8082/api/pedidos/usuario/${usuario}`
+                `https://alta-belleza-backend-production.up.railway.app/api/pedidos/usuario/${usuario}`
             );
 
             if (!respuesta.ok) {
@@ -44,7 +44,7 @@ function MisPedidos() {
                     try {
 
                         const respuestaDetalles = await fetch(
-                            `http://localhost:8082/api/detalles/${pedido.id}`
+                            `https://alta-belleza-backend-production.up.railway.app/api/detalles/${pedido.id}`
                         );
 
                         if (!respuestaDetalles.ok) {

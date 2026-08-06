@@ -22,7 +22,7 @@ function Registro() {
 
     try {
 
-      const respuesta = await fetch("http://localhost:8082/auth/registro", {
+      const respuesta = await fetch("https://alta-belleza-backend-production.up.railway.app/auth/registro", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

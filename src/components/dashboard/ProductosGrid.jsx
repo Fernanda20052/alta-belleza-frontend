@@ -43,7 +43,7 @@ function ProductosGrid({
 
         try {
 
-            const respuesta = await fetch("http://localhost:8082/api/productos");
+            const respuesta = await fetch("https://alta-belleza-backend-production.up.railway.app/api/productos");
 
             const datos = await respuesta.json();
 
@@ -63,7 +63,7 @@ function ProductosGrid({
 
             const respuesta = await fetch(
 
-                `http://localhost:8082/api/favoritos/${usuario}`
+                `https://alta-belleza-backend-production.up.railway.app/api/favoritos/${usuario}`
 
             );
 
@@ -99,7 +99,7 @@ setFavoritos(datos);
 
         const respuesta = await fetch(
 
-            `http://localhost:8082/api/favoritos/${usuario}/${productoId}`,
+            `https://alta-belleza-backend-production.up.railway.app/api/favoritos/${usuario}/${productoId}`,
 
             {
 
@@ -141,7 +141,7 @@ setFavoritos(datos);
 
             await fetch(
 
-                `http://localhost:8082/api/favoritos/${usuario}/${productoId}`,
+                `https://alta-belleza-backend-production.up.railway.app/api/favoritos/${usuario}/${productoId}`,
 
                 {
 
@@ -269,7 +269,7 @@ setFavoritos(datos);
 </div>
 
                             <img
-    src={`http://localhost:8082/uploads/${producto.imagen}`}
+    src={`https://alta-belleza-backend-production.up.railway.app/uploads/${producto.imagen}`}
     alt={producto.nombre}
     onError={(e) => {
         e.target.src = imagenesProductos[producto.imagen] || "";

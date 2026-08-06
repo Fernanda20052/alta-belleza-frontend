@@ -18,8 +18,7 @@ function Login() {
 
     try {
 
-      const respuesta = await fetch("http://localhost:8082/auth/login", {
-
+const respuesta = await fetch("https://alta-belleza-backend-production.up.railway.app/auth/login", {
         method: "POST",
 
         headers: {

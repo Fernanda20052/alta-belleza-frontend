@@ -16,7 +16,7 @@ function Productos() {
 
         const obtenerProductos = () => {
 
-            fetch("http://localhost:8082/api/productos")
+            fetch("https://alta-belleza-backend-production.up.railway.app/api/productos")
                 .then((respuesta) => respuesta.json())
                 .then((datos) => setProductos(datos))
                 .catch((error) => console.error(error));
@@ -75,8 +75,8 @@ function Productos() {
                             <div className="imagen-producto">
 
                                 <img
-                                    src={`http://localhost:8082/uploads/${producto.imagen}`}
-                                    alt={producto.nombre}
+                                   
+    src={`https://alta-belleza-backend-production.up.railway.app/uploads/${producto.imagen}`}
                                     onError={(e) => {
                                         e.target.src = "https://via.placeholder.com/300x300?text=Sin+Imagen";
                                     }}
