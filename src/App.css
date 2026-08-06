@@ -1,0 +1,444 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f8f4f4;
+}
+
+.menu li:hover{
+    color:#c35674;
+}
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:60px;
+    gap:40px;
+}
+
+.hero-texto{
+    width:50%;
+}
+
+.coleccion{
+    color:#c35674;
+    letter-spacing:3px;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:64px;
+    color:#2f1d22;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:#c35674;
+    font-style:italic;
+}
+
+.descripcion{
+    font-size:18px;
+    color:#666;
+    margin-bottom:30px;
+}
+
+.botones{
+    display:flex;
+    gap:20px;
+}
+
+.btn-principal,
+.btn-secundario{
+    padding:15px 30px;
+    border:none;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.btn-principal{
+    background:#c35674;
+    color:white;
+}
+
+.btn-secundario{
+    background:white;
+    border:1px solid #c35674;
+    color:#c35674;
+}
+
+.hero-imagen img{
+    width:500px;
+    border-radius:10px;
+}
+/* ---------- PRODUCTOS ---------- */
+
+.productos{
+    padding:80px 60px;
+    background:#f8f4f4;
+}
+
+.titulo-productos{
+    margin-bottom:40px;
+}
+
+.titulo-productos p{
+    color:#c35674;
+    letter-spacing:3px;
+    font-size:14px;
+    margin-bottom:10px;
+}
+
+.titulo-productos h2{
+    font-size:50px;
+    color:#2f1d22;
+}
+
+.contenedor-productos{
+    display:flex;
+    justify-content:space-between;
+    gap:30px;
+}
+
+.tarjeta{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    width:32%;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.tarjeta:hover{
+    transform:translateY(-5px);
+}
+
+.tarjeta img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+}
+
+.tarjeta h3{
+    margin:15px;
+    color:#2f1d22;
+}
+
+.tarjeta p{
+    margin:0 15px;
+    color:#777;
+}
+
+.tarjeta span{
+    display:block;
+    margin:15px;
+    color:#c35674;
+}
+/* ---------- PROMOCIONES ---------- */
+
+.promociones{
+    padding:80px 60px;
+    background:#ffffff;
+}
+
+.titulo-promociones{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.titulo-promociones p{
+    color:#c35674;
+    letter-spacing:3px;
+    font-size:14px;
+    margin-bottom:10px;
+}
+
+.titulo-promociones h2{
+    font-size:50px;
+    color:#2f1d22;
+}
+
+.contenedor-promociones{
+    display:flex;
+    gap:25px;
+}
+
+.promo{
+    flex:1;
+    padding:40px 30px;
+    border-radius:10px;
+    color:white;
+}
+
+.negro{
+    background:#1d0f16;
+}
+
+.rosa{
+    background:#c35674;
+}
+
+.claro{
+    background:#f6dfe6;
+    color:#2f1d22;
+}
+
+.promo h3{
+    margin-bottom:20px;
+}
+
+.promo p{
+    margin-bottom:30px;
+    line-height:1.6;
+}
+
+.promo button{
+    padding:12px 25px;
+    background:transparent;
+    border:1px solid white;
+    color:white;
+    cursor:pointer;
+}
+
+.claro button{
+    border:1px solid #c35674;
+    color:#c35674;
+}
+/* ---------- NOSOTROS ---------- */
+
+.nosotros{
+    padding:80px 60px;
+    background:#f8f4f4;
+}
+
+.contenido-nosotros{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:50px;
+}
+
+.texto-nosotros{
+    width:50%;
+}
+
+.subtitulo{
+    color:#c35674;
+    letter-spacing:3px;
+    margin-bottom:15px;
+    font-size:14px;
+}
+
+.texto-nosotros h2{
+    font-size:50px;
+    color:#2f1d22;
+    margin-bottom:20px;
+}
+
+.texto-nosotros p{
+    color:#666;
+    line-height:1.8;
+    margin-bottom:15px;
+}
+
+.estadisticas{
+    display:flex;
+    gap:40px;
+    margin-top:30px;
+}
+
+.estadisticas h3{
+    color:#c35674;
+    font-size:32px;
+}
+
+.estadisticas span{
+    color:#555;
+    font-size:14px;
+}
+
+.imagen-nosotros img{
+    width:500px;
+    border-radius:10px;
+}
+/* ---------- CONTACTO ---------- */
+
+.contacto{
+    display:flex;
+    justify-content:space-between;
+    gap:50px;
+    padding:80px 60px;
+    background:#ffffff;
+}
+
+.info-contacto{
+    width:45%;
+}
+
+.info-contacto h2{
+    font-size:50px;
+    color:#2f1d22;
+    margin-bottom:20px;
+}
+
+.info-contacto p{
+    margin-bottom:15px;
+    color:#666;
+    line-height:1.8;
+}
+
+.formulario{
+    width:45%;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.formulario input,
+.formulario textarea{
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.formulario button{
+    background:#c35674;
+    color:white;
+    border:none;
+    padding:15px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.formulario button:hover{
+    background:#a93f5c;
+}
+/* ---------- FOOTER ---------- */
+
+.footer{
+    background:#000;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.footer h2{
+    margin-bottom:15px;
+    font-size:32px;
+}
+
+.footer p{
+    margin-bottom:20px;
+    color:#d8d8d8;
+}
+
+.footer-menu{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    list-style:none;
+}
+
+.footer-menu li{
+    cursor:pointer;
+}
+
+.footer-menu li:hover{
+    color:#f3a8bb;
+}
+/* ---------- SUBMENÚ ---------- */
+
+.submenu li:hover{
+    background:#f8dce4;
+    color:#c35674;
+}
+/* ---------- BANNER POR TEMPORADA ---------- */
+
+.banner-sanvalentin{
+    background:#d63384;
+    color:white;
+    text-align:center;
+    padding:18px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.banner-navidad{
+    background:#198754;
+    color:white;
+    text-align:center;
+    padding:18px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.banner-primavera{
+    background:#f8dce4;
+    color:#c35674;
+    text-align:center;
+    padding:18px;
+    font-size:18px;
+    font-weight:bold;
+}
+/* ===========================
+   Banner - Primavera
+=========================== */
+.banner-primavera {
+  background-color: #f8d7e5;
+  color: #c94f7c;
+}
+
+/* ===========================
+   Banner - Verano
+=========================== */
+.banner-verano {
+  background-color: #ffe082;
+  color: #e65100;
+}
+
+/* ===========================
+   Banner - Otoño
+=========================== */
+.banner-otono {
+  background-color: #d7ccc8;
+  color: #6d4c41;
+}
+
+/* ===========================
+   Banner - Navidad
+=========================== */
+.banner-navidad {
+  background-color: #c8e6c9;
+  color: #b71c1c;
+}
+
+/* ===========================
+   Botón para cambiar temporada
+=========================== */
+.boton-temporada {
+  margin-top: 10px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+/* ==========================================
+   Práctica 8 - Destacar contenido mediante el puntero
+========================================== */
+
+.tarjeta {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.tarjeta.activa {
+  transform: scale(1.08);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}

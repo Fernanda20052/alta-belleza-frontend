@@ -1,0 +1,73 @@
+/* ===========================
+   GOOGLE FONTS
+=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+/* ===========================
+   VARIABLES GLOBALES
+=========================== */
+:root{
+
+  --color-principal:#111111;
+  --color-secundario:#666666;
+  --color-dorado:#C9A227;
+  --color-blanco:#FFFFFF;
+  --color-fondo:#F8F8F8;
+  --color-borde:#EAEAEA;
+
+  --fuente-titulos:'Playfair Display', serif;
+  --fuente-texto:'Poppins', sans-serif;
+
+}
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+
+  background:var(--color-fondo);
+
+  color:var(--color-principal);
+
+  font-family:var(--fuente-texto);
+
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+img{
+  max-width:100%;
+  display:block;
+}
+
+button{
+
+  font-family:var(--fuente-texto);
+
+}
+
+ul{
+
+  list-style:none;
+
+}
+
+#root{
+
+  width:100%;
+
+}

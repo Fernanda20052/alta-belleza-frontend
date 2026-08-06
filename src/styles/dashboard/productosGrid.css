@@ -1,0 +1,165 @@
+.productos-dashboard{
+
+    width:90%;
+    margin:70px auto;
+
+}
+
+.titulo-productos{
+
+    margin-bottom:35px;
+
+}
+
+.titulo-productos h2{
+
+    font-size:40px;
+    font-family:"Playfair Display",serif;
+    color:#111;
+
+}
+
+.titulo-productos p{
+
+    color:#777;
+    margin-top:10px;
+
+}
+
+.grid-productos{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+    gap:30px;
+
+}
+
+.card-producto{
+
+    position:relative;
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+
+}
+
+.card-producto:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.corazon{
+
+    position:absolute;
+    top:18px;
+    right:18px;
+
+    width:42px;
+    height:42px;
+
+    background:white;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:18px;
+
+    color:#cfcfcf;
+
+    cursor:pointer;
+
+    box-shadow:0 4px 10px rgba(0,0,0,.12);
+
+    transition:.3s;
+
+}
+
+.corazon:hover{
+
+    transform:scale(1.08);
+
+}
+
+.corazon.favorito{
+
+    color:#E63946;
+
+}
+
+.card-producto img{
+
+    width:180px;
+    height:180px;
+    object-fit:contain;
+    display:block;
+    margin:auto;
+
+}
+
+.categoria{
+
+    display:inline-block;
+    background:#f7d7e5;
+    color:#c94f7c;
+    padding:6px 14px;
+    border-radius:30px;
+    font-size:13px;
+    margin-top:15px;
+
+}
+
+.card-producto h3{
+
+    margin-top:15px;
+    font-size:22px;
+
+}
+
+.descripcion{
+
+    color:#666;
+    margin:15px 0;
+    min-height:60px;
+
+}
+
+.card-producto h4{
+
+    color:#d4a514;
+    font-size:28px;
+    margin-bottom:10px;
+
+}
+
+.stock{
+
+    color:#777;
+    display:block;
+    margin-bottom:20px;
+
+}
+
+.card-producto button{
+
+    width:100%;
+    border:none;
+    background:#111;
+    color:white;
+    padding:14px;
+    border-radius:40px;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.card-producto button:hover{
+
+    background:#d4a514;
+
+}

@@ -1,0 +1,77 @@
+.pagina-legal {
+  background: #f8f8f8;
+  min-height: 100vh;
+  padding: 60px 20px;
+}
+
+.contenedor-legal {
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,.08);
+}
+
+.contenedor-legal h1 {
+  text-align: center;
+  color: #c85d7b;
+  margin-bottom: 10px;
+}
+
+.fecha {
+  text-align: center;
+  color: #777;
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+.contenedor-legal h2 {
+  color: #c85d7b;
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+
+.contenedor-legal p {
+  color: #444;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.contenedor-legal ul {
+  margin-left: 25px;
+  margin-bottom: 20px;
+}
+
+.contenedor-legal li {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+@media (max-width: 768px) {
+
+  .contenedor-legal {
+    padding: 30px 20px;
+  }
+
+  .contenedor-legal h1 {
+    font-size: 2rem;
+  }
+
+}
+.btn-volver {
+  display: inline-block;
+  margin: 20px 0 35px;
+  padding: 12px 24px;
+  background: #c85d7b;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-volver:hover {
+  background: #b34d6b;
+  transform: translateY(-2px);
+}

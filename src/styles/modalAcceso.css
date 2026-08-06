@@ -1,0 +1,188 @@
+.modal-overlay{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.55);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    z-index:9999;
+}
+
+.modal-acceso{
+    width:430px;
+    max-width:90%;
+    background:#fff;
+    border-radius:20px;
+    padding:45px 35px;
+
+    position:relative;
+    text-align:center;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+
+    animation:aparecer .3s ease;
+}
+
+@keyframes aparecer{
+
+    from{
+        opacity:0;
+        transform:scale(.9);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+
+}
+
+/* BOTÓN CERRAR */
+
+.cerrar-modal{
+
+    position:absolute;
+    top:15px;
+    right:18px;
+
+    background:transparent !important;
+    background-color:transparent !important;
+
+    border:none !important;
+
+    width:auto !important;
+    height:auto !important;
+
+    padding:0 !important;
+    margin:0 !important;
+
+    box-shadow:none !important;
+
+    border-radius:0 !important;
+
+    color:#666;
+
+    font-size:34px;
+
+    font-weight:300;
+
+    line-height:1;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.cerrar-modal:hover{
+
+    color:#C94F7C;
+
+    transform:scale(1.15);
+
+}
+
+/* TITULOS */
+
+.modal-acceso h2{
+
+    font-family:"Playfair Display", serif;
+
+    font-size:34px;
+
+    color:#111;
+
+    margin-bottom:18px;
+
+}
+
+.modal-acceso h3{
+
+    color:#C94F7C;
+
+    font-size:20px;
+
+    margin-bottom:18px;
+
+}
+
+.modal-acceso p{
+
+    color:#666;
+
+    line-height:1.7;
+
+    font-size:18px;
+
+    margin-bottom:30px;
+
+}
+
+/* BOTÓN LOGIN */
+
+.btn-modal-login{
+
+    display:block;
+
+    text-decoration:none;
+
+    background:#111;
+
+    color:#fff;
+
+    padding:15px;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-modal-login:hover{
+
+    background:#C9A227;
+
+}
+
+/* SEPARADOR */
+
+.separador{
+
+    display:block;
+
+    margin:28px 0;
+
+    color:#999;
+
+    font-size:15px;
+
+}
+
+/* REGISTRO */
+
+.btn-modal-registro{
+
+    text-decoration:none;
+
+    color:#C94F7C;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.btn-modal-registro:hover{
+
+    color:#111;
+
+}

@@ -1,0 +1,161 @@
+.mis-pedidos-container{
+
+    max-width:900px;
+
+    margin:40px auto;
+
+    padding:20px;
+
+}
+
+.mis-pedidos-container h1{
+
+    text-align:center;
+
+    font-size:45px;
+
+    margin-bottom:35px;
+
+    font-family:"Playfair Display", serif;
+
+    color:#111;
+
+}
+
+.btn-volver{
+
+    background:#C9A227;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 22px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    margin-bottom:35px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-volver:hover{
+
+    background:#111;
+
+}
+
+.pedido-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    margin-bottom:30px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+}
+
+.pedido-card h3{
+
+    font-size:30px;
+
+    margin-bottom:20px;
+
+    color:#111;
+
+}
+
+.pedido-card p{
+
+    margin:10px 0;
+
+    font-size:18px;
+
+    color:#444;
+
+}
+
+.pedido-card strong{
+
+    color:#111;
+
+}
+
+.pedido-card hr{
+
+    border:none;
+
+    border-top:1px solid #e6e6e6;
+
+    margin:25px 0;
+
+}
+
+.pedido-card h4{
+
+    color:#C9A227;
+
+    font-size:24px;
+
+    margin-bottom:25px;
+
+}
+
+.producto-item{
+
+    padding:15px 0;
+
+    border-bottom:1px solid #efefef;
+
+}
+
+.producto-item:last-child{
+
+    border-bottom:none;
+
+}
+
+.producto-nombre{
+
+    font-size:21px;
+
+    font-weight:bold;
+
+    color:#111;
+
+    margin-bottom:8px;
+
+}
+
+.producto-info{
+
+    color:#666;
+
+    font-size:17px;
+
+    line-height:1.8;
+
+}
+
+.total-pedido{
+
+    margin-top:25px;
+
+    text-align:right;
+
+    font-size:28px;
+
+    font-weight:bold;
+
+    color:#C9A227;
+
+}

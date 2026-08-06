@@ -1,0 +1,133 @@
+.checkout-container{
+
+    width:90%;
+
+    margin:50px auto;
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:40px;
+
+}
+
+.checkout-formulario{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+.checkout-formulario h1{
+
+    margin-bottom:10px;
+
+    font-size:40px;
+
+    font-family:"Playfair Display",serif;
+
+}
+
+.checkout-formulario h3{
+
+    margin-bottom:25px;
+
+    color:#777;
+
+}
+
+.checkout-formulario input{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:18px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+}
+
+.checkout-resumen{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+    height:max-content;
+
+}
+
+.producto-checkout{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin:15px 0;
+
+}
+
+.linea{
+
+    border-top:1px solid #ddd;
+
+    margin:20px 0;
+
+}
+
+.total{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    font-size:24px;
+
+    font-weight:bold;
+
+}
+
+.paypal-btn{
+
+    width:100%;
+
+    margin-top:30px;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#0070BA;
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.paypal-btn:hover{
+
+    background:#005EA6;
+
+}

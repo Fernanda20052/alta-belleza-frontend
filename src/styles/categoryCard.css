@@ -1,0 +1,114 @@
+.categorias{
+
+    padding:90px 70px;
+    background:#fafafa;
+
+}
+
+.titulo-categorias{
+
+    text-align:center;
+    margin-bottom:60px;
+
+}
+
+.titulo-categorias span{
+
+    color:#C9A227;
+    letter-spacing:3px;
+    font-size:14px;
+    font-weight:600;
+
+}
+
+.titulo-categorias h2{
+
+    font-family:"Playfair Display",serif;
+    font-size:46px;
+    margin-top:15px;
+
+}
+
+.grid-categorias{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+}
+
+.category-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    padding:35px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.category-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.category-image{
+
+    height:180px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.category-image img{
+
+    width:150px;
+
+    object-fit:contain;
+
+}
+
+.category-card h3{
+
+    margin:20px 0;
+
+    font-size:22px;
+
+}
+
+.category-card button{
+
+    border:none;
+
+    background:#111;
+
+    color:white;
+
+    padding:12px 30px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.category-card button:hover{
+
+    background:#C9A227;
+
+}
