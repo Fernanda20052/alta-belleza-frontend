@@ -75,7 +75,7 @@ function Productos() {
 
                             <div className="imagen-producto">
 
-                                <img
+                           <img
     src={producto.imagen}
     alt={producto.nombre}
     onError={(e) => {
