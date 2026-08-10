@@ -59,14 +59,19 @@ function CarritoLista() {
                                         className="producto-carrito"
                                     >
 
-                                        <img
-                                            src={`https://alta-belleza-backend-production.up.railway.app/uploads/${producto.imagen}`}
-                                            alt={producto.nombre}
-                                            onError={(e) => {
-                                                e.target.src =
-                                                    imagenesProductos[producto.imagen] || "";
-                                            }}
-                                        />
+                                     <img
+    src={producto.imagen}
+    alt={producto.nombre}
+    onError={(e) => {
+        console.log(
+            "No se pudo cargar la imagen:",
+            producto.imagen
+        );
+
+        e.target.src =
+            "https://via.placeholder.com/300x300?text=Sin+Imagen";
+    }}
+/>
 
                                         <div className="info-producto">
 
