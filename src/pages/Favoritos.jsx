@@ -137,14 +137,16 @@ function Favoritos() {
 
                                 <div className="favorito-imagen">
 
-                                  <img
-    src={`https://alta-belleza-backend-production.up.railway.app/uploads/${favorito.producto.imagen}`}
+<img
+    src={favorito.producto.imagen}
     alt={favorito.producto.nombre}
     onError={(e) => {
-        console.log("No se encontró:", favorito.producto.imagen);
+        console.log(
+            "No se pudo cargar la imagen:",
+            favorito.producto.imagen
+        );
 
-        e.target.src =
-            imagenesProductos[favorito.producto.imagen] || "";
+        e.target.src = "https://via.placeholder.com/300x300?text=Sin+Imagen";
     }}
 />
 
