@@ -52,8 +52,8 @@ const salir = () => {
         try {
 
             const respuesta = await fetch(
-                "https://alta-belleza-backend-production.up.railway.app/api/productos"
-            );
+"https://alta-belleza-backend-production.up.railway.app/api/productos"
+);
 
             const datos = await respuesta.json();
 
@@ -211,8 +211,6 @@ const guardarProducto = async (e) => {
 
 };
    
-
-
 
     const eliminarProducto = async (id) => {
 

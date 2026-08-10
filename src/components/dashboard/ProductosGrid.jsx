@@ -268,8 +268,12 @@ setFavoritos(datos);
 
 </div>
 
-                            <img
-    src={`https://alta-belleza-backend-production.up.railway.app/uploads/${producto.imagen}`}
+<img
+    src={
+        producto.imagen?.startsWith("http")
+            ? producto.imagen
+            : imagenesProductos[producto.imagen] || ""
+    }
     alt={producto.nombre}
     onError={(e) => {
         e.target.src = imagenesProductos[producto.imagen] || "";
