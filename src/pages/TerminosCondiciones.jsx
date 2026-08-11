@@ -3,8 +3,7 @@ import "../styles/legal.css";
 
 function TerminosCondiciones() {
   return (
-    <div className="pagina-legal">
-
+<div id="terminos" className="pagina-legal">
       <div className="contenedor-legal">
 
         <h1>Términos y Condiciones</h1>

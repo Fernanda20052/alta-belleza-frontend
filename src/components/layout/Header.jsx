@@ -10,206 +10,297 @@ import "../../styles/header.css";
 
 function Header() {
 
-  const [mostrarMenu, setMostrarMenu] = useState(false);
+    const [mostrarMenu, setMostrarMenu] = useState(false);
 
-  const { usuario, cerrarSesion } = useAuth();
+    const { usuario, cerrarSesion } = useAuth();
 
-  const navigate = useNavigate();
+    const navigate = useNavigate();
 
-  const salir = () => {
+    const salir = () => {
 
-    cerrarSesion();
+        cerrarSesion();
 
-    navigate("/");
+        navigate("/");
 
-  };
+    };
 
-  return (
+    // Desplazamiento hacia el Footer
+    const irAlFooter = (id) => {
 
-    <header className="header">
+        const elemento = document.getElementById(id);
 
-      <div className="logo-container">
+        if (!elemento) {
+            return;
+        }
 
-        <RouterLink to="/">
+        const posicion =
+            elemento.getBoundingClientRect().top +
+            window.scrollY -
+            100;
 
-          <img
-            src={logo}
-            alt="Alta Belleza"
-            className="logo-img"
-          />
+        window.scrollTo({
+            top: posicion,
+            behavior: "smooth"
+        });
 
-        </RouterLink>
+    };
 
-        <div className="logo-texto">
+    return (
 
-          <h2>ALTA BELLEZA</h2>
+        <header className="header">
 
-          <span>Beauty Store</span>
+            {/* LOGO */}
 
-        </div>
+            <div className="logo-container">
 
-      </div>
+                <RouterLink to="/">
 
-      <nav>
+                    <img
+                        src={logo}
+                        alt="Alta Belleza"
+                        className="logo-img"
+                    />
 
-        <ul className="menu">
+                </RouterLink>
 
-          <li>
+                <div className="logo-texto">
 
-            <Link
-              to="inicio"
-              smooth={true}
-              duration={500}
-              offset={-80}
-            >
-              Inicio
-            </Link>
+                    <h2>ALTA BELLEZA</h2>
 
-          </li>
+                    <span>Beauty Store</span>
 
-          <li
-            className="menu-productos"
-            onMouseEnter={() => setMostrarMenu(true)}
-            onMouseLeave={() => setMostrarMenu(false)}
-          >
-
-            <Link
-              to="productos"
-              smooth={true}
-              duration={500}
-              offset={-80}
-            >
-              Productos
-            </Link>
-
-            {mostrarMenu && (
-
-              <ul className="submenu">
-
-                <li>Labiales</li>
-                <li>Bases</li>
-                <li>Correctores</li>
-                <li>Sombras</li>
-                <li>Brochas</li>
-                <li>Skincare</li>
-
-              </ul>
-
-            )}
-
-          </li>
-
-          <li>
-
-            <Link
-              to="promociones"
-              smooth={true}
-              duration={500}
-              offset={-80}
-            >
-              Promociones
-            </Link>
-
-          </li>
-
-          <li>
-
-            <Link
-              to="nosotros"
-              smooth={true}
-              duration={500}
-              offset={-80}
-            >
-              Nosotros
-            </Link>
-
-          </li>
-
-          <li>
-
-            <Link
-              to="contacto"
-              smooth={true}
-              duration={500}
-              offset={-80}
-            >
-              Contacto
-            </Link>
-
-          </li>
-
-        </ul>
-
-      </nav>
-
-      <div className="acciones">
-
-        {!usuario ? (
-
-          <div className="auth-buttons">
-
-            <RouterLink
-              to="/login"
-              className="btn-login"
-            >
-              Iniciar sesión
-            </RouterLink>
-
-            <RouterLink
-              to="/registro"
-              className="btn-register"
-            >
-              Crear cuenta
-            </RouterLink>
-
-          </div>
-
-        ) : (
-
-          <>
-
-            <FaHeart
-              className="icono"
-              title="Favoritos"
-            />
-
-            <FaShoppingBag
-              className="icono"
-              title="Carrito"
-            />
-
-            <div className="usuario-info">
-
-              <span>
-
-                Hola,
-
-                <br />
-
-                <strong>{usuario}</strong>
-
-              </span>
-
-              <button
-                className="btn-logout"
-                onClick={salir}
-              >
-
-                Cerrar sesión
-
-              </button>
+                </div>
 
             </div>
 
-          </>
 
-        )}
+            {/* MENÚ */}
 
-      </div>
+            <nav>
 
-    </header>
+                <ul className="menu">
 
-  );
+                    {/* Inicio */}
+
+                    <li>
+
+                        <Link
+                            to="inicio"
+                            smooth={true}
+                            duration={500}
+                            offset={-80}
+                        >
+                            Inicio
+                        </Link>
+
+                    </li>
+
+
+                    {/* Productos */}
+
+                    <li
+                        className="menu-productos"
+                        onMouseEnter={() => setMostrarMenu(true)}
+                        onMouseLeave={() => setMostrarMenu(false)}
+                    >
+
+                        <Link
+                            to="productos"
+                            smooth={true}
+                            duration={500}
+                            offset={-80}
+                        >
+                            Productos
+                        </Link>
+
+
+                        {mostrarMenu && (
+
+                            <ul className="submenu">
+
+                                <li>Labiales</li>
+
+                                <li>Bases</li>
+
+                                <li>Correctores</li>
+
+                                <li>Sombras</li>
+
+                                <li>Brochas</li>
+
+                                <li>Skincare</li>
+
+                            </ul>
+
+                        )}
+
+                    </li>
+
+
+                    {/* Promociones */}
+
+                    <li>
+
+                        <Link
+                            to="promociones"
+                            smooth={true}
+                            duration={500}
+                            offset={-80}
+                        >
+                            Promociones
+                        </Link>
+
+                    </li>
+
+
+                    {/* Nosotros */}
+
+                    <li>
+
+                        <Link
+                            to="nosotros"
+                            smooth={true}
+                            duration={500}
+                            offset={-80}
+                        >
+                            Nosotros
+                        </Link>
+
+                    </li>
+
+
+                    {/* Contacto */}
+
+                    <li>
+
+                        <Link
+                            to="contacto"
+                            smooth={true}
+                            duration={500}
+                            offset={-80}
+                        >
+                            Contacto
+                        </Link>
+
+                    </li>
+
+
+                    {/* Términos y condiciones */}
+
+                    <li className="enlace-legal">
+
+                        <a
+                            href="#terminos-footer"
+                            onClick={(e) => {
+
+                                e.preventDefault();
+
+                                irAlFooter("terminos-footer");
+
+                            }}
+                        >
+                            Términos y condiciones
+                        </a>
+
+                    </li>
+
+
+                    {/* Aviso de privacidad */}
+
+                    <li className="enlace-legal">
+
+                        <a
+                            href="#privacidad-footer"
+                            onClick={(e) => {
+
+                                e.preventDefault();
+
+                                irAlFooter("privacidad-footer");
+
+                            }}
+                        >
+                            Aviso de privacidad
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+            {/* ACCIONES */}
+
+            <div className="acciones">
+
+                {!usuario ? (
+
+                    <div className="auth-buttons">
+
+                        <RouterLink
+                            to="/login"
+                            className="btn-login"
+                        >
+                            Iniciar sesión
+                        </RouterLink>
+
+
+                        <RouterLink
+                            to="/registro"
+                            className="btn-register"
+                        >
+                            Crear cuenta
+                        </RouterLink>
+
+                    </div>
+
+                ) : (
+
+                    <>
+
+                        <FaHeart
+                            className="icono"
+                            title="Favoritos"
+                        />
+
+
+                        <FaShoppingBag
+                            className="icono"
+                            title="Carrito"
+                        />
+
+
+                        <div className="usuario-info">
+
+                            <span>
+
+                                Hola,
+
+                                <br />
+
+                                <strong>{usuario}</strong>
+
+                            </span>
+
+
+                            <button
+                                className="btn-logout"
+                                onClick={salir}
+                            >
+                                Cerrar sesión
+                            </button>
+
+                        </div>
+
+                    </>
+
+                )}
+
+            </div>
+
+        </header>
+
+    );
 
 }
 

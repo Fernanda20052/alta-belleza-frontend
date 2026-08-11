@@ -3,8 +3,7 @@ import "../styles/legal.css";
 
 function AvisoPrivacidad() {
   return (
-    <div className="pagina-legal">
-
+<div id="privacidad" className="pagina-legal">
       <div className="contenedor-legal">
 
         <h1>Aviso de Privacidad</h1>

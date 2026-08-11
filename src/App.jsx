@@ -14,12 +14,12 @@ import MisPedidos from "./pages/MisPedidos";
 import Favoritos from "./pages/Favoritos";
 import Admin from "./pages/Admin";
 
-// NUEVAS PÁGINAS
 import AvisoPrivacidad from "./pages/AvisoPrivacidad";
 import TerminosCondiciones from "./pages/TerminosCondiciones";
 
 import RutaProtegida from "./components/RutaProtegida";
 import ModalAcceso from "./components/ModalAcceso";
+
 
 function App() {
 
@@ -31,16 +31,31 @@ function App() {
   } = useAuth();
 
   return (
+
     <>
 
       <Routes>
 
         {/* Públicas */}
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/registro" element={<Registro />} />
+
+        <Route
+          path="/"
+          element={<Home />}
+        />
+
+        <Route
+          path="/login"
+          element={<Login />}
+        />
+
+        <Route
+          path="/registro"
+          element={<Registro />}
+        />
+
 
         {/* Páginas legales */}
+
         <Route
           path="/aviso-privacidad"
           element={<AvisoPrivacidad />}
@@ -50,6 +65,7 @@ function App() {
           path="/terminos-condiciones"
           element={<TerminosCondiciones />}
         />
+
 
         {/* Protegidas */}
 
@@ -118,6 +134,7 @@ function App() {
 
       </Routes>
 
+
       <ModalAcceso
         abierto={modalAbierto}
         cerrar={cerrarModal}
@@ -126,6 +143,7 @@ function App() {
       />
 
     </>
+
   );
 
 }

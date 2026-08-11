@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 
 function Footer() {
+
   return (
+
     <footer className="footer">
 
       <h2>Alta Belleza</h2>
@@ -17,11 +19,37 @@ function Footer() {
           <h3>Enlaces</h3>
 
           <ul className="footer-menu">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#productos">Productos</a></li>
-            <li><a href="#promociones">Promociones</a></li>
-            <li><a href="#nosotros">Nosotros</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+
+            <li>
+              <a href="#inicio">
+                Inicio
+              </a>
+            </li>
+
+            <li>
+              <a href="#productos">
+                Productos
+              </a>
+            </li>
+
+            <li>
+              <a href="#promociones">
+                Promociones
+              </a>
+            </li>
+
+            <li>
+              <a href="#nosotros">
+                Nosotros
+              </a>
+            </li>
+
+            <li>
+              <a href="#contacto">
+                Contacto
+              </a>
+            </li>
+
           </ul>
 
         </div>
@@ -31,17 +59,23 @@ function Footer() {
           <h3>Información</h3>
 
           <ul className="footer-menu">
-            <li>
+
+            <li id="privacidad-footer">
+
               <Link to="/aviso-privacidad">
                 Aviso de Privacidad
               </Link>
+
             </li>
 
-            <li>
+            <li id="terminos-footer">
+
               <Link to="/terminos-condiciones">
                 Términos y Condiciones
               </Link>
+
             </li>
+
           </ul>
 
         </div>
@@ -53,7 +87,9 @@ function Footer() {
       </p>
 
     </footer>
+
   );
+
 }
 
 export default Footer;
